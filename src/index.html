@@ -3,181 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio · Minimalista</title>
-  <!-- Tailwind CSS v3 CDN -->
+  <title>Julio Ugalde - Portafolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome (opcional, para iconos) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../src/styles/style.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-gray-900 text-gray-300 font-sans antialiased">
 
-  <!-- Contenedor principal .home -->
+  <!-- Contenedor principal -->
   <div class="home max-w-6xl mx-auto px-6 py-12 md:py-20">
 
-    <!-- ====== ENCABEZADO / HERO ====== -->
-    <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-slate-200 pb-8 mb-12">
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-gray-700 pb-8 mb-12">
       <div>
-        <h1 class="text-4xl md:text-5xl font-light tracking-tight text-slate-900">
-          <span class="font-semibold">Laura</span> Vega
+        <h1 class="text-4xl md:text-5xl font-light tracking-tight text-white">
+          <span class="font-semibold text-orange-600">Julio</span> Ugalde Aguilar
         </h1>
-        <p class="text-lg text-slate-500 mt-1">diseño & desarrollo front-end</p>
+        <p class="text-lg text-gray-400 mt-1">Programador Full-Stack</p>
       </div>
-      <nav class="flex gap-6 text-sm font-medium text-slate-600">
-        <a href="#proyectos" class="hover:text-slate-900 transition">Proyectos</a>
-        <a href="#contacto" class="hover:text-slate-900 transition">Contacto</a>
+      <nav class="flex flex-wrap gap-6 text-sm font-medium text-gray-400">
+        <a href="#solid-exp" class="nav-link hover:text-white transition">Experiencia Solida</a>
+        <a href="#real-projects" class="nav-link hover:text-white transition">Proyectos y Contribuciones en Mercado</a>
+        <a href="#side-projects" class="nav-link hover:text-white transition">Proyectos Personales</a>
+        <a href="#contact" class="nav-link hover:text-white transition">Contacto</a>
       </nav>
     </header>
 
-    <!-- ====== PRESENTACIÓN BREVE ====== -->
-    <section class="mb-16 max-w-2xl">
-      <p class="text-xl md:text-2xl text-slate-700 leading-relaxed">
-        Construyo experiencias digitales con código limpio y diseño atento. 
-        <span class="text-slate-400">·</span> cada proyecto cuenta una historia.
+    <!-- About me -->
+    <section class="mb-16 max-w-4xl">
+      <p class="text-xl md:text-2xl text-gray-300 leading-relaxed">
+        Empecé a programar desde 2014 por curiosidad pero no formalicé hasta 2018 cuando entré a la Universidad obteniendo las
+        bases y desarrollando en el camino un gusto por la automatización y la optimización de tiempos.
+        Construyo herramientas que optimizan flujos, extraen información valiosa y reducen tiempos operativos.
       </p>
-      <div class="flex gap-4 mt-6 text-slate-400">
-        <span class="inline-flex items-center gap-1 text-sm"><i class="fas fa-code"></i> HTML + Tailwind</span>
-        <span class="inline-flex items-center gap-1 text-sm"><i class="fas fa-mobile-alt"></i> responsive</span>
+      <div class="flex flex-wrap gap-4 mt-6 text-gray-300">
+        <span class="inline-flex items-center gap-1 text-sm"><i class="fas fa-code "></i>C/C++, TS, JS, Python, PHP, C#, Java</span>
+        <span class="inline-flex items-center gap-1 text-sm"><i class="fas fa-database "></i>MongoDB, SQL, SQLite</span>
+        <span class="inline-flex items-center gap-1 text-sm"><i class="fas fa-layer-group "></i>Angular, Electron, Node, Express, Docker, Git/Github</span>
       </div>
     </section>
 
-    <!-- ====== PROYECTOS (GRID) ====== -->
-    <section id="proyectos" class="mb-20">
-      <h2 class="text-2xl font-light tracking-wider uppercase text-slate-400 border-b border-slate-200 pb-2 mb-8">
-        <i class="fas fa-th-large mr-2"></i> Proyectos
+    <!-- Experiencia Sólida -->
+    <section id="solid-exp" class="mb-20">
+      <h2 class="text-2xl font-light tracking-wider uppercase text-gray-100 border-b border-gray-700 pb-2 mb-8">
+        EXPERIENCIA SOLIDA
+      </h2>
+
+      <div class="space-y-8">
+        <!-- Item 1 -->
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
+          <div class="md:w-1/3">
+            <p class="font-semibold text-white">Automatización inteligente de procesos</p>
+          </div>
+          <div class="md:w-2/3">
+            <p class="text-gray-300">Diseño aplicaciones web y de escritorio que reemplazan tareas manuales con procesos automáticos, estables y auditables.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
+          <div class="md:w-1/3">
+            <p class="font-semibold text-white">Extracción masiva de datos desde PDF</p>
+          </div>
+          <div class="md:w-2/3">
+            <p class="text-gray-300">He trabajado con volúmenes grandes de documentos: extracción de texto por lotes, limpieza y estructuración usando expresiones regulares (RegExp) para encontrar patrones específicos sin depender de IA. También genero e imprimo PDFs dinámicos con datos variables.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
+          <div class="md:w-1/3">
+            <p class="font-semibold text-white">Entrenamiento de modelos NER (sin IA generativa)</p>
+          </div>
+          <div class="md:w-2/3">
+            <p class="text-gray-300">Entreno modelos de reconocimiento de entidades nombradas para detectar intenciones y coincidencias en texto, mejorando la precisión en búsquedas y clasificación de contenido. Todo con enfoque práctico, no teórico.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
+          <div class="md:w-1/3">
+            <p class="font-semibold text-white">Web Scraping</p>
+          </div>
+          <div class="md:w-2/3">
+            <p class="text-gray-300">Extraigo datos desde sitios web cuando no hay API disponible, integrándolos limpios y listos para usar en otros sistemas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos y Contribuciones en Mercado -->
+    <section id="real-projects" class="mb-20">
+      <h2 class="text-2xl font-light tracking-wider uppercase text-gray-100 border-b border-gray-700 pb-2 mb-8">
+        Proyectos y Contribuciones en Mercado
       </h2>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Proyecto 1 -->
-        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-slate-100 flex flex-col">
-          <div class="h-48 bg-gradient-to-br from-indigo-100 to-sky-100 flex items-center justify-center text-5xl text-indigo-300">
-            <i class="fas fa-palette"></i>
+        <div class="card-hover bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-700 flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-indigo-900 to-sky-900 flex items-center justify-center text-5xl">
+            <i class="fas fa-palette text-indigo-300"></i>
           </div>
           <div class="p-5 flex-1 flex flex-col">
-            <h3 class="text-xl font-semibold text-slate-800">Cromática</h3>
-            <p class="text-sm text-slate-500 mt-1 flex-1">Generador de paletas basado en accesibilidad y armonía.</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-code"></i> fuente</a>
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-external-link-alt"></i> demo</a>
+            <h3 class="text-xl font-semibold text-white">Front2Go Assitant</h3>
+            <p class="text-sm text-gray-400 mt-1 flex-1">Automatiza tareas del software hotelero <b class="text-orange-400">Front2Go</b> para revisión automática de reservaciones.</p>
+            <div class="flex flex-wrap gap-3 mt-4">
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-code"></i> Código Fuente (ver info)</a>
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-external-link-alt"></i> Info</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto 2 -->
-        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-slate-100 flex flex-col">
-          <div class="h-48 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center text-5xl text-amber-400">
-            <i class="fas fa-cloud-sun"></i>
+        <div class="card-hover bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-700 flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-amber-900 to-orange-900 flex items-center justify-center text-5xl">
+            <i class="fas fa-cloud-sun text-amber-300"></i>
           </div>
           <div class="p-5 flex-1 flex flex-col">
-            <h3 class="text-xl font-semibold text-slate-800">Clima Now</h3>
-            <p class="text-sm text-slate-500 mt-1 flex-1">App del tiempo con animaciones suaves y datos en tiempo real.</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-code"></i> fuente</a>
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-external-link-alt"></i> demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proyecto 3 -->
-        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-slate-100 flex flex-col">
-          <div class="h-48 bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center text-5xl text-emerald-400">
-            <i class="fas fa-leaf"></i>
-          </div>
-          <div class="p-5 flex-1 flex flex-col">
-            <h3 class="text-xl font-semibold text-slate-800">EcoRuta</h3>
-            <p class="text-sm text-slate-500 mt-1 flex-1">Planificador de viajes sostenibles con huella de carbono.</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-code"></i> fuente</a>
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-external-link-alt"></i> demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proyecto 4 (extra para grid) -->
-        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-slate-100 flex flex-col">
-          <div class="h-48 bg-gradient-to-br from-rose-100 to-pink-100 flex items-center justify-center text-5xl text-rose-300">
-            <i class="fas fa-camera-retro"></i>
-          </div>
-          <div class="p-5 flex-1 flex flex-col">
-            <h3 class="text-xl font-semibold text-slate-800">Lens</h3>
-            <p class="text-sm text-slate-500 mt-1 flex-1">Galería minimalista con filtros y modo oscuro.</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-code"></i> fuente</a>
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-external-link-alt"></i> demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proyecto 5 -->
-        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-slate-100 flex flex-col">
-          <div class="h-48 bg-gradient-to-br from-violet-100 to-purple-100 flex items-center justify-center text-5xl text-violet-400">
-            <i class="fas fa-brain"></i>
-          </div>
-          <div class="p-5 flex-1 flex flex-col">
-            <h3 class="text-xl font-semibold text-slate-800">Mindful</h3>
-            <p class="text-sm text-slate-500 mt-1 flex-1">Meditación guiada con temporizador y sonidos envolventes.</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-code"></i> fuente</a>
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-external-link-alt"></i> demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proyecto 6 -->
-        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-slate-100 flex flex-col">
-          <div class="h-48 bg-gradient-to-br from-cyan-100 to-blue-100 flex items-center justify-center text-5xl text-cyan-400">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <div class="p-5 flex-1 flex flex-col">
-            <h3 class="text-xl font-semibold text-slate-800">DashFlow</h3>
-            <p class="text-sm text-slate-500 mt-1 flex-1">Dashboard analítico con gráficos interactivos y métricas.</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-code"></i> fuente</a>
-              <a href="#" class="text-sm inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition"><i class="fas fa-external-link-alt"></i> demo</a>
+            <h3 class="text-xl font-semibold text-white">Asistente Inteligente Hotelero</h3>
+            <p class="text-sm text-gray-400 mt-1 flex-1">Asistente controlado por voz para la gestión supervisada de reservaciones de hotel.</p>
+            <div class="flex flex-wrap gap-3 mt-4">
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-code"></i> Código Fuente</a>
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-external-link-alt"></i> Demo</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ====== CONTACTO ====== -->
-    <section id="contacto" class="bg-white rounded-3xl shadow-sm border border-slate-100 px-6 py-10 md:px-10 md:py-14 mb-8">
+    <!-- Proyectos Personales -->
+    <section id="side-projects" class="mb-20">
+      <h2 class="text-2xl font-light tracking-wider uppercase text-gray-100 border-b border-gray-700 pb-2 mb-8">
+        Proyectos Personales
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Proyecto 1 -->
+        <div class="card-hover bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-700 flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-indigo-900 to-sky-900 flex items-center justify-center text-5xl">
+            <i class="fas fa-palette text-indigo-300"></i>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold text-white">Tienda E-commerce</h3>
+            <p class="text-sm text-gray-400 mt-1 flex-1">Sistema para venta en línea con panel de administración y gestión de stock y ventas.</p>
+            <div class="flex flex-wrap gap-3 mt-4">
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-code"></i> Código Fuente</a>
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-external-link-alt"></i> Info y Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="card-hover bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-700 flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-amber-900 to-orange-900 flex items-center justify-center text-5xl">
+            <i class="fas fa-cloud-sun text-amber-300"></i>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold text-white">Send-it</h3>
+            <p class="text-sm text-gray-400 mt-1 flex-1">Aplicación de mensajería en tiempo real con soporte para envío de imágenes y chats grupales.</p>
+            <div class="flex flex-wrap gap-3 mt-4">
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-code"></i> Código Fuente</a>
+              <a href="#" class="text-sm inline-flex items-center gap-1 text-orange-400 hover:text-orange-300 transition"><i class="fas fa-external-link-alt"></i> Info y Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="bg-gray-800 rounded-3xl shadow-lg border border-gray-700 px-6 py-10 md:px-10 md:py-14 mb-8">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <h2 class="text-2xl font-light tracking-wider uppercase text-slate-400 flex items-center gap-2">
-            <i class="fas fa-paper-plane"></i> Contacto
+          <h2 class="text-2xl font-light tracking-wider uppercase text-gray-100 flex items-center gap-2">
+             Contacto
           </h2>
-          <p class="text-slate-600 mt-2 max-w-sm">
-            ¿Tienes un proyecto en mente? Hablemos.
-          </p>
+          <p class="text-gray-400 mt-2 max-w-sm">Abierto a colaborar en cualquier proyecto</p>
         </div>
         <div class="flex flex-wrap items-center gap-6">
-          <a href="#" class="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 transition border-b border-transparent hover:border-slate-300 pb-1">
-            <i class="fas fa-envelope"></i> laura@portafolio.dev
+          <a href="julio.ugalde404@gmail.com"  class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition border-b border-transparent hover:border-indigo-400 pb-1">
+            <i class="fas fa-envelope"></i> Email
           </a>
-          <a href="#" class="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 transition border-b border-transparent hover:border-slate-300 pb-1">
-            <i class="fab fa-github"></i> @lauradev
+          <a href="https://github.com/subl-1me" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition border-b border-transparent hover:border-indigo-400 pb-1">
+            <i class="fab fa-github"></i> GitHub
           </a>
-          <a href="#" class="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 transition border-b border-transparent hover:border-slate-300 pb-1">
+          <a href="https://mx.linkedin.com/" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition border-b border-transparent hover:border-indigo-400 pb-1">
             <i class="fab fa-linkedin-in"></i> linkedin
           </a>
         </div>
       </div>
-      <!-- micro detalle: línea decorativa -->
-      <div class="mt-6 w-16 h-0.5 bg-indigo-200 rounded-full"></div>
     </section>
 
-    <!-- ====== FOOTER ====== -->
-    <footer class="text-xs text-slate-400 border-t border-slate-200 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
-      <span>© 2026 Laura Vega · hecho con <i class="fas fa-heart text-rose-300 text-xs"></i></span>
+    <!-- Footer -->
+    <footer class="text-xs text-gray-500 border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <span>© 2026 Julio Ugalde · hecho con <i class="fas fa-heart text-rose-400 text-xs"></i></span>
       <span class="flex gap-4">
-        <a href="#" class="hover:text-slate-600 transition"><i class="fab fa-github"></i></a>
-        <a href="#" class="hover:text-slate-600 transition"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="hover:text-slate-600 transition"><i class="fab fa-codepen"></i></a>
+        <a href="https://github.com/subl-1me" class="hover:text-white transition"><i class="fab fa-github"></i></a>
       </span>
     </footer>
 
   </div>
-  <!-- fin .home -->
+  <!-- Fin .home -->
 </body>
 </html>
